@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp"
+    android:layout_margin="12dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="#fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/imgNtol"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="80dp"/>
+
+        <View
+            android:id="@+id/viewRecy"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:background="#090101"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txtJudul"
+            />
+
+            <TextView
+                android:id="@+id/txtSubJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="subJudul"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/viewRecy"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
